@@ -21,6 +21,15 @@ for every_commit in data:
 print('一共有', len(new), '筆留言長度小於100')
 print(new[0])
 print(new[1])
+
+
+good = []
+for every_commit in data:
+    if 'good' in every_commit:
+        good.append(every_commit)
+print('一共有', len(good), '筆留言提到good')
+print(good[0])
+print(good[1])
 # total_num = 0
 # for str_number in data:
 #     total_num = total_num + len(str_number)
